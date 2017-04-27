@@ -12,6 +12,8 @@
 		885506061EB18F66000EB64C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885506041EB18F66000EB64C /* Main.storyboard */; };
 		885506081EB18F66000EB64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885506071EB18F66000EB64C /* Assets.xcassets */; };
 		8855060B1EB18F66000EB64C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885506091EB18F66000EB64C /* LaunchScreen.storyboard */; };
+		886908DD1EB194740017BC6D /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886908DC1EB194740017BC6D /* DraggableImageView.swift */; };
+		886908DF1EB194890017BC6D /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 886908DE1EB194890017BC6D /* CustomView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		885506071EB18F66000EB64C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8855060A1EB18F66000EB64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8855060C1EB18F66000EB64C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		886908DC1EB194740017BC6D /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
+		886908DE1EB194890017BC6D /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				885506071EB18F66000EB64C /* Assets.xcassets */,
 				885506091EB18F66000EB64C /* LaunchScreen.storyboard */,
 				8855060C1EB18F66000EB64C /* Info.plist */,
+				886908DC1EB194740017BC6D /* DraggableImageView.swift */,
+				886908DE1EB194890017BC6D /* CustomView.xib */,
 			);
 			path = TinderCDPTH;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8855060B1EB18F66000EB64C /* LaunchScreen.storyboard in Resources */,
+				886908DF1EB194890017BC6D /* CustomView.xib in Resources */,
 				885506081EB18F66000EB64C /* Assets.xcassets in Resources */,
 				885506061EB18F66000EB64C /* Main.storyboard in Resources */,
 			);
@@ -137,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				885506031EB18F66000EB64C /* CardsViewController.swift in Sources */,
+				886908DD1EB194740017BC6D /* DraggableImageView.swift in Sources */,
 				885506011EB18F66000EB64C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +309,7 @@
 				885506111EB18F66000EB64C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
