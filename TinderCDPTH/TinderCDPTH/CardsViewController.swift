@@ -10,6 +10,7 @@ import UIKit
 
 class CardsViewController: UIViewController {
     
+    @IBOutlet var draggleImageView: DraggableImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +23,12 @@ class CardsViewController: UIViewController {
     }
 
 
+    @IBAction func didTap(_ sender: UITapGestureRecognizer) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let dc = storyBoard.instantiateViewController(withIdentifier: "profileView") as! ProfileViewController
+        dc.profileImage = draggleImageView.imageView.image
+        present(dc, animated: true, completion: nil)
+    }
     
 }
 

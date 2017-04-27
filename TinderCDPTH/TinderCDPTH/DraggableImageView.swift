@@ -63,6 +63,19 @@ class DraggableImageView: UIView {
                 rotationDegrees = rotationDegrees * -1
             }
             
+            if (transation.x > 50) {
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.imageView.center.x = self.contentView.bounds.width + self.imageView.bounds.width;
+                })
+            }
+            else if (transation.x < -50) {
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.imageView.center.x = -self.imageView.bounds.width;
+                })
+            } else {
+                self.imageView.transform = CGAffineTransform.identity
+                self.imageView.center = self.initialPoint
+            }
 //            self.contentView.center = CGPoint(x:self.initialPoint!.x + transation.x, y:self.initialPoint!.y)
             //print(transation.x.degreesToRadians * 10)
             //if velocity.x > 0 {

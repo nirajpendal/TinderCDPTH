@@ -14,6 +14,7 @@
 		8855060B1EB18F66000EB64C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885506091EB18F66000EB64C /* LaunchScreen.storyboard */; };
 		886908DD1EB194740017BC6D /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886908DC1EB194740017BC6D /* DraggableImageView.swift */; };
 		886908DF1EB194890017BC6D /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 886908DE1EB194890017BC6D /* CustomView.xib */; };
+		C5AB3F9D1EB19F9800F4A831 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB3F9C1EB19F9800F4A831 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8855060C1EB18F66000EB64C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		886908DC1EB194740017BC6D /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
 		886908DE1EB194890017BC6D /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		C5AB3F9C1EB19F9800F4A831 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				8855060C1EB18F66000EB64C /* Info.plist */,
 				886908DC1EB194740017BC6D /* DraggableImageView.swift */,
 				886908DE1EB194890017BC6D /* CustomView.xib */,
+				C5AB3F9C1EB19F9800F4A831 /* ProfileViewController.swift */,
 			);
 			path = TinderCDPTH;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				885506031EB18F66000EB64C /* CardsViewController.swift in Sources */,
 				886908DD1EB194740017BC6D /* DraggableImageView.swift in Sources */,
+				C5AB3F9D1EB19F9800F4A831 /* ProfileViewController.swift in Sources */,
 				885506011EB18F66000EB64C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
