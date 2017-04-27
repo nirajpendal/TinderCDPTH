@@ -9,7 +9,7 @@
 import UIKit
 
 class CardsViewController: UIViewController {
-
+    var initialPoint:CGPoint?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +21,8 @@ class CardsViewController: UIViewController {
     }
 
 
+    @IBAction func onPanGesture(_ sender: UIPanGestureRecognizer) {
+        
+    }
 }
 
