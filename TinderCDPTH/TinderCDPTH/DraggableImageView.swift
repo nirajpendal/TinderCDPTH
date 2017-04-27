@@ -9,7 +9,7 @@
 import UIKit
 
 class DraggableImageView: UIView {
-    var initialPoint:CGPoint?
+    var initialPoint:CGPoint!
     
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var imageView: UIImageView!
@@ -54,20 +54,28 @@ class DraggableImageView: UIView {
         case .changed:
             print("changed")
             let transation = sender.translation(in: contentView)
-            let velocity = sender.velocity(in: contentView)
+           // let velocity = sender.velocity(in: contentView)
+            let location  = sender.location(in: contentView)
+            
+            var rotationDegrees = transation.x.degreesToRadians / 50
+            
+            if location.y > initialPoint.y {
+                rotationDegrees = rotationDegrees * -1
+            }
             
 //            self.contentView.center = CGPoint(x:self.initialPoint!.x + transation.x, y:self.initialPoint!.y)
-            
+            //print(transation.x.degreesToRadians * 10)
             //if velocity.x > 0 {
                 // clock wise
                 //self.contentView.transform = CGAffineTransform(rotationAngle: transation.x.degreesToRadians)
-                self.imageView.transform = self.imageView.transform.rotated(by: transation.x.degreesToRadians)
+                self.imageView.transform = self.imageView.transform.rotated(by: rotationDegrees)
             //} else {
                 // counter clock-wise
                 
 //            }
 
-        case .ended:
+        case .ended,.cancelled:
+            print("ended")
            // self.contentView.transform =
             self.contentView.center = self.initialPoint!
         default:
